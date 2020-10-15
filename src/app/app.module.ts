@@ -8,7 +8,9 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { HomeComponent } from './home/home.component';
 import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
 import { ArticulosService } from './services/articulos.service';
-import {  HttpClientModule } from '@angular/common/http'
+import {  HttpClientModule } from '@angular/common/http';
+import { AgregarArticuloComponent } from './agregar-articulo/agregar-articulo.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import {  HttpClientModule } from '@angular/common/http'
     EncabezadoComponent,
     HomeComponent,
     ArticuloDetalleComponent,
+    AgregarArticuloComponent,
     
     
     
@@ -23,7 +26,8 @@ import {  HttpClientModule } from '@angular/common/http'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     UsuarioService,
