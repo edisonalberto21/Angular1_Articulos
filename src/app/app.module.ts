@@ -3,16 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UsuarioService } from './services/usuario.service';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
+import { HomeComponent } from './home/home.component';
+import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
+import { ArticulosService } from './services/articulos.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EncabezadoComponent,
+    HomeComponent,
+    ArticuloDetalleComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    UsuarioService,
+    ArticulosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

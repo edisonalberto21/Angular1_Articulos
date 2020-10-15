@@ -1,0 +1,12 @@
+<div style="margin-top: 10px;" class="row">
+    <div *ngFor="let articulo of articulos" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 (click)="irAlDetalle(articulo)" class="card-title">{{articulo.titulo}}</h5>
+          <p class="card-text">{{articulo.descripcion}}</p>
+          <a href="#" class="btn btn-primary">{{articulo.usuario}}</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
