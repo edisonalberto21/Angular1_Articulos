@@ -8,6 +8,7 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { HomeComponent } from './home/home.component';
 import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
 import { ArticulosService } from './services/articulos.service';
+import {  HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -16,10 +17,13 @@ import { ArticulosService } from './services/articulos.service';
     HomeComponent,
     ArticuloDetalleComponent,
     
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     UsuarioService,
